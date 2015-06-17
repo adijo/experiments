@@ -27,8 +27,10 @@ def f(x):
     ret = REDIS.get(elem)
     LOCK.release()
     if ret != None:
+        print "not found", elem
         return ret
     else:
+        print "found", elem
         LOCK.acquire()
         REDIS.set(elem, int(pow(x, 2)))
         LOCK.release()
