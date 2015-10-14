@@ -11,7 +11,13 @@ Programming exercises done during my spare time for fun and learning.
   E -> T | T + E
   T -> int | int * T | ( E )
   ```
-  
+* ## Shortest Prefix for Words in a List.
+  ```python
+  Input: [zebra, dog, duck, dove]
+  Output: {z, dog, du, dov}
+  ```
+  Implemented using a **Trie.**
+
 * ## Binary Search Tree Iterator: 
   The implemented iterator has a `hasNext` and `next` method that yields elements in an in-order fashion.
   
